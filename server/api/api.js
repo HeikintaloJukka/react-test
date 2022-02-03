@@ -40,6 +40,7 @@ router.post("/order", (req, res) => {
   }
 
   console.log("added order: "+req.body.nimi+" "+req.body.osoite);
+  res.json({ message: "Order added succesfully" });
 })
 
 module.exports = router

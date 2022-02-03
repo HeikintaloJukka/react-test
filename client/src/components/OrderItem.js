@@ -1,8 +1,9 @@
 import React, { useState, useEffect  } from 'react';
 import axios from 'axios';
 import '../css/OrderItem.css';
+import getWeather from '../api/api.js';
 //import getWeather from './api/api.js';
-const config = require('../config/config.json');
+const config = require('../config.json');
 
 function App() {
   const [weather, setWeather] = useState(0);
@@ -11,15 +12,13 @@ function App() {
 
   //Runs only on the first render when 2nd option is empty array
   useEffect(() => {
-    axios.get(config.serverUrl+"/api/weather", {
-    })
-    .then(function (res) {
+    let weather = getWeather().then(function (res) {
       console.log(res);
       setWeather(res.data.temp);
-    })
-    .catch(function (error) {
+      })
+      .catch(function (error) {
       console.log(error);
-    });
+      });
   }, []);
 
   const handleChange = (event) => {
@@ -39,7 +38,7 @@ function App() {
       osoite: osoite
     })
     .then(function (res) {
-      console.log(res);
+      console.log(res.data);
     })
     .catch(function (error) {
       console.log(error);
