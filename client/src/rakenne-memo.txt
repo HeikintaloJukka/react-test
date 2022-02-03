@@ -1,0 +1,7 @@
+DDD:
+/app/App.js
+    -> order
+        -> container
+        -> component
+        -> action
+    -> weather 
