@@ -1,1 +1,0 @@
-//shared componentit ovat ali komponentteja. esim. button, jota kaikki muuta komponentit kutsuu.

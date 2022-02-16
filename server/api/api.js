@@ -30,7 +30,7 @@ router.use(function timeLog (req, res, next) {
 * Default shown for all unkown calls to api
 */
 router.get("/", (req, res) => {
-  res.json({ message: "Hello from api!" });
+  res.json({ message: "Hello from api!", validPages: ["api/weather","api/order"] });
 })
 
 /*

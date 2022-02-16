@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    background-color: #ffffff;
+}
+
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  min-height:600px;
+  margin-bottom:20px;
+}
+
+h1{
+    margin:64px;
+    margin-left:0;
+    text-transform: capitalize;
+}
+
+.content{
+    width: 980px;
+    margin-bottom:20px;
+}
+
+.container1 {
+    width:100%;
+}
+
+#img1{
+  background-image:url("https://pixy.org/src/481/thumbs350/4813668.jpg");
+}
+
+#img2{
+  background-image:url("https://pixy.org/src/487/thumbs350/4875488.jpg");
+}

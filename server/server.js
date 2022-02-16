@@ -24,7 +24,7 @@ app.use('/api', api)
 app.all("*", (req, res) => {
   console.log('WARN failed path: '+req.method+' ',util.fullUrl(req),' time: ', Date.now())
   res.writeHead(303, {
-    location: "http://127.0.0.1:3001/api",
+    location: util.urlNoPath(req)+'/api',
   });
   res.end();
 })

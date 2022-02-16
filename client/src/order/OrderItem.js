@@ -1,8 +1,8 @@
 import React, { useState, useEffect  } from 'react';
 import axios from 'axios';
-import '../app/css/OrderItem.css';
+import './OrderItem.css';
 import getWeather from '../api/api.js';
-//import getWeather from './api/api.js';
+import Navbar from '../home/Navbar';
 const config = require('../config.json');
 
 function App() {
@@ -46,7 +46,9 @@ function App() {
   }
 
   return (
-    <div className="OrderItem d-flex justify-content-center">
+    <>
+    <Navbar/>
+    <div className="OrderItem d-flex justify-content-center" data-test="order">
       <div>
         <h1>Kuulokkeet</h1>
         <p>Laatu kuulokkeet halpaan hintaan. Joka sään kestävät. 30€</p>
@@ -55,17 +57,36 @@ function App() {
           <div className="input-group-prepend col-3">
             <span className="input-group-text" id="">Nimi</span>
           </div>
-          <input type="text" className="form-control" name="nimi" value={nimi} onChange={handleChange}/>
+          <input 
+            type="text" 
+            data-test="name"
+            className="form-control" 
+            name="nimi" 
+            value={nimi} 
+            onChange={handleChange}/>
         </div>
         <div className="input-group mb-3">
           <div className="input-group-prepend col-3">
             <span className="input-group-text" id="">Osoite</span>
           </div>
-          <input type="text" className="form-control" name="osoite" value={osoite} onChange={handleChange}/>
+          <input 
+            type="text"
+            data-test="address"
+            className="form-control" 
+            name="osoite" 
+            value={osoite} 
+            onChange={handleChange}/>
         </div>
-        <button type="button" className="btn btn-primary" onClick={order}>Lähetä tilaus</button>
+        <button 
+          type="button"
+          data-test="send-order"
+          className="btn btn-primary" 
+          onClick={order}>
+            Lähetä tilaus
+        </button>
       </div>
     </div>
+    </>
   );
 }
 

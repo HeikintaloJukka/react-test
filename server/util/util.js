@@ -11,9 +11,17 @@ function fullUrl(req) {
     });
   }
 
+function urlNoPath(req) {
+    return url.format({
+        protocol: req.protocol,
+        host: req.get('host')
+    });
+  }
+
 function test(req) {
     console.log("util test");
   }
 
 module.exports.fullUrl = fullUrl;
+module.exports.urlNoPath = urlNoPath;
 module.exports.test = test;
