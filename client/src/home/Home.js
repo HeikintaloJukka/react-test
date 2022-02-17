@@ -1,9 +1,9 @@
 import React, { useState, useEffect  } from 'react';
 import './Home.css';
 import Navbar from './Navbar';
-const config = require('../config.json');
+import ChatbotCustom from '../chatbot/ChatbotCustom';
 
-function Home() {
+const Home = () => {
 
   return (
     <>
@@ -33,6 +33,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ChatbotCustom/>
     </>
   );
 }

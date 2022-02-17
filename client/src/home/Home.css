@@ -37,3 +37,30 @@ h1{
 #img2{
   background-image:url("https://pixy.org/src/487/thumbs350/4875488.jpg");
 }
+
+.react-chatbot-kit-chat-container{
+  position: fixed !important;
+  bottom: 70px;
+  right: 15px;
+  z-index: 9;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.react-chatbot-kit-chat-message-container{
+  overflow:auto !important;
+}
+
+.btn-circle.btn-md {
+  width: 50px;
+  height: 50px;
+  padding: 7px 10px;
+  border-radius: 25px;
+  font-size: 15px;
+  text-align: center;
+
+  position: fixed !important;
+  bottom: 10px;
+  right: 15px;
+  z-index: 9;
+}
