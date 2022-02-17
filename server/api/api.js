@@ -1,8 +1,8 @@
 const axios = require("axios");
 const sqlite3 = require('sqlite3').verbose();
-const express = require('express')
-const router = express.Router()
-const util = require('../util/util')
+const express = require('express');
+const router = express.Router();
+const util = require('../util/util');
 
 /*
 * Open sqlite3 connection
@@ -30,7 +30,10 @@ router.use(function timeLog (req, res, next) {
 * Default shown for all unkown calls to api
 */
 router.get("/", (req, res) => {
-  res.json({ message: "Hello from api!", validPages: ["api/weather","api/order"] });
+  res.json({ message: "Hello from api!", validPages: [
+    {"api/weather": util.urlNoPath(req)+"/api/weather"},
+    {"api/order": util.urlNoPath(req)+"/api/order"}
+  ]});
 })
 
 /*
