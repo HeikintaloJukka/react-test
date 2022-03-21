@@ -1,5 +1,4 @@
-import React, { useState, useEffect  } from 'react';
-//import './app/css/OrderItem.css';
+import React from 'react';
 const config = require('../config.json');
 
 function Navbar() {

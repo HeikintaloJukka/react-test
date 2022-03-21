@@ -1,4 +1,4 @@
-import React, { useState, useEffect  } from 'react';
+import React from 'react';
 import './Home.css';
 import Navbar from './Navbar';
 import ChatbotCustom from '../chatbot/ChatbotCustom';

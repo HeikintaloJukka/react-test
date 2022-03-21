@@ -4,8 +4,6 @@ import botconfig from './config.js';
 import MessageParser from './MessageParser.js';
 import ActionProvider from './ActionProvider.js';
 
-import Navbar from '../home/Navbar.js';
-
 const hide = () => {
     console.log("hide");
     let bot = document.getElementById('hideBot');
