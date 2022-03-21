@@ -1,11 +1,11 @@
 import React, { useState, useEffect  } from 'react';
 import axios from 'axios';
 import './OrderItem.css';
-import getWeather from '../api/api.js';
+import {getWeather} from '../api/api.js';
 import Navbar from '../home/Navbar';
 const config = require('../config.json');
 
-function App() {
+function OrderItem() {
   const [weather, setWeather] = useState(0);
   const [nimi, setNimi] = useState("");
   const [osoite, setOsoite] = useState("");
@@ -90,4 +90,4 @@ function App() {
   );
 }
 
-export default App;
+export default OrderItem;
