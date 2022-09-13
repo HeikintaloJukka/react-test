@@ -15,10 +15,10 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarToggleExternalContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="/">Home</a>
+            <a className="nav-link" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/order">Order</a>
+            <a className="nav-link" href="#/order">Order</a>
           </li>
         </ul>
       </div>
