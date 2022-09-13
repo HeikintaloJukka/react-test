@@ -11,7 +11,7 @@ https://heikintalojukka.github.io/react-test/client/build/
 
 Requires two terminals pointed to the two folders and running 
 ``
-npm run start
+npm ci && npm run start
 ``
 in both.
 
