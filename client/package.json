@@ -41,5 +41,5 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.2"
   },
-  "homepage": "https://heikintalojukka.github.io/react-test/client/build/"
+  "homepage": "."
 }
